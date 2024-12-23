@@ -41,26 +41,31 @@
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">আমার লেখা সিরিজ গুলো:</a>
               
-        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-          {%- for tag in tags_list -%}
-      
-            <a class="dropdown-item" href="#">{{- tag -}}</a>
-            
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-            
-              {%- for post in site.tags[tag] -%}
-              
-                  <a class= "dropdown-item" href="{{ post.url | relative_url }}">{{- post.title | strip_html -}}</a>
-            
-              
-              {%- endfor -%}
+        <ul>
 
-            </div>    
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+            {%- for tag in tags_list -%}
+        
+              <a class="dropdown-item" href="#">{{- tag -}}</a>
               
-          
-          {%- endfor -%}
-          
-        </div>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+              
+                {%- for post in site.tags[tag] -%}
+                
+                    <a class= "dropdown-item" href="{{ post.url | relative_url }}">{{- post.title | strip_html -}}</a>
+              
+                
+                {%- endfor -%}
+  
+              </div>    
+                
+            
+            {%- endfor -%}
+            
+          </div>
+  
+        </ul>
+        
       </li>    
       
           
