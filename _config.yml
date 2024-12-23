@@ -15,6 +15,13 @@ title: My Memoirs Archived
 # Your name to show in the footer
 author: মীর ইমতিয়াজ মোসতাফিজ নাভেদ
 
+include:
+  - _series
+
+tag_map:
+  "ইত্তেফাক এ সোনালী দিনগুলো আমার" : "ittefaqgoldendays.html"
+  "এক কাপ চা'র গপ্পো": "onecuptea.html"
+  
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
