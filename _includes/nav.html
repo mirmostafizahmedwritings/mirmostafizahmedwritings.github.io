@@ -50,7 +50,7 @@
             
               {%- for post in site.tags[tag] -%}
               
-                  <a class= "nav-link" href="{{ post.url | relative_url }}">{{- post.title | strip_html -}}</a>
+                  <a class= ""dropdown-item"" href="{{ post.url | relative_url }}">{{- post.title | strip_html -}}</a>
             
               
               {%- endfor -%}
