@@ -10,22 +10,23 @@
 ############################
 
 # Name of website
-title: My website
+title: My Memoirs Archived
 
 # Your name to show in the footer
-author: Some Person
+author: মীর ইমতিয়াজ মোসতাফিজ নাভেদ
 
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
+  আমার পরিচয়: "aboutme"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
-
+    - Author's home: 
+      - Hello : "https://deanattali.com"
+      - Hi: "aboutme"
 ################
 # --- Logo --- #
 ################
