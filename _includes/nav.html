@@ -44,7 +44,17 @@
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
           {%- for tag in tags_list -%}
       
-            <a class="dropdown-item" href="tags/#{{- tag -}}">{{- tag -}}</a>
+            <a class="dropdown-item" href="#">{{- tag -}}</a>
+            
+            {%- for post in site.tags[tag] -%}
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+            
+                <a class= "nav-link" href="{{ post.url | relative_url }}">{{- post.title | strip_html -}}</a>
+            
+              </div>    
+              
+            {%- endfor -%}
+
           
           {%- endfor -%}
           
