@@ -21,9 +21,9 @@ author: মীর ইমতিয়াজ মোসতাফিজ নাভেদ
 
 navbar-links:
   আমার পরিচয়: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
+  #Resources:
+  #  - Beautiful Jekyll: "https://beautifuljekyll.com"
+  #  - Learn markdown: "https://www.markdowntutorial.com/"
     #- Author's home: 
     #  - Hello : "https://deanattali.com"
     #  - Hi: "aboutme"
