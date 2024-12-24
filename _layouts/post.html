@@ -40,8 +40,23 @@ layout: base
       {% endif %}
 
       <div class="blog-post">
+        
+        <h1>
+          {{ page.subtitle | strip_html }}
+        </h1>
+        
         {{ content }}
+
+          
+        <b>বন্ধু তালিকার মানুষদের জন্য ফেসবুকে লেখা টি পড়া ও মন্তব্য-আলোচনা করার লিংক পাবেন <a href="{{page.fblink}}">এখানে</a></b>
+       
+        
+        <p><i> <b>এই সিরিজের বাকি লেখাগুলো পাবেন এই লিংক এ  <a href="{{ site.baseurl }}/{{site.tag_map[page.tags.first]}}">{{page.tags[0]}}</a> </b> </i></p>
+
       </div>
+
+      
+        
 
       {% if page.tags.size > 0 %}
         <div class="blog-tags">
