@@ -1,6 +1,6 @@
 ---
 layout: page
-title: ইত্তেফাক এ সোনালী দিনগুলো আমার
+title: সিরিজ- "ইত্তেফাক এ সোনালী দিনগুলো আমার"
 permalink: /ittefaqgoldendays.html
 ---
 
@@ -9,7 +9,7 @@ permalink: /ittefaqgoldendays.html
     <div class="post-list">
         {%- for post in site.tags["ইত্তেফাক এ সোনালী দিনগুলো আমার"] -%}
             <div class="tag-entry">
-                <a href="{{ post.url | relative_url }}">{{- post.title | strip_html -}}</a>
+                <a href="{{ post.url | relative_url }}">{{- post.title | strip_html -}}":-"{{- post.subtitle | strip_html -}}</a>
                 <div class="entry-date">
                     <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: date_format -}}</time>
                 </div>
