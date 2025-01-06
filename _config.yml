@@ -21,6 +21,8 @@ include:
 tag_map:
   "ইত্তেফাক এ সোনালী দিনগুলো আমার" : "ittefaqgoldendays.html"
   "এক কাপ চা'র গপ্পো": "onecuptea.html"
+  "ফিরে দেখা" : "throwback.html"
+  "অন্য যত কথা" : "miscellaneous.html"
   
 ###############################################
 # --- List of links in the navigation bar --- #

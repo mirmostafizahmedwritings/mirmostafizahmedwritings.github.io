@@ -1,0 +1,18 @@
+---
+layout: page
+title: সিরিজ- "ফিরে দেখা"
+permalink: /throwback.html
+---
+
+{% assign date_format = site.date_format | default: "%B %-d, %Y" %}
+
+    <div class="post-list">
+        {%- for post in site.tags["ফিরে দেখা"] -%}
+            <div class="tag-entry">
+                <a href="{{ post.url | relative_url }}">{{- post.title | strip_html -}}:-<b><i>{{- post.subtitle | strip_html -}}</i></b></a>
+                
+            </div>
+        {%- endfor -%}
+    </div>
+
+
