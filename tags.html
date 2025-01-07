@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 'Tag Index'
+title: 'লেখকের সিরিজ সমূহ'
 ---
 
 {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
@@ -36,20 +36,3 @@ title: 'Tag Index'
 </div>
 
 
-{% capture tags %}
-  {% for tag in site.tags %}
-    {{ tag[0] }}
-  {% endfor %}
-{% endcapture %}
-
-<h1>Posts tagged with "{{ tags }}" "{{page.url}}"</h1>
-
-<ul>
-  {% assign filtered_posts = site.posts | where: "tags", tags %}
-  {% for post in filtered_posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      <p>{{ post.date | date: "%B %d, %Y" }}</p>
-    </li>
-  {% endfor %}
-</ul>
